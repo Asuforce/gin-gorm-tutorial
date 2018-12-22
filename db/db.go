@@ -3,6 +3,8 @@ package db
 import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres" // Use PostgreSQL in gorm
+
+	"github.com/asuforce/gin-gorm-tutorial/entity"
 )
 
 var (
@@ -16,9 +18,15 @@ func Init() {
 	if err != nil {
 		panic(err)
 	}
+
+	autoMigration()
 }
 
 // GetDB is called in models
 func GetDB() *gorm.DB {
 	return db
+}
+
+func autoMigration() {
+	db.AutoMigrate(&entity.User{})
 }
