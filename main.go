@@ -8,4 +8,6 @@ import (
 func main() {
 	db.Init()
 	server.Init()
+
+	db.Close()
 }

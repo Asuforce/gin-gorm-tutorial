@@ -27,6 +27,13 @@ func GetDB() *gorm.DB {
 	return db
 }
 
+// Close is closing db
+func Close() {
+	if err := db.Close(); err != nil {
+		panic(err)
+	}
+}
+
 func autoMigration() {
 	db.AutoMigrate(&entity.User{})
 }
