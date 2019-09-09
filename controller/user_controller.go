@@ -5,7 +5,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/asuforce/gin-gorm-tutorial/service"
+	"gin-gorm-tutorial/service"
 )
 
 // Controller is user controlller

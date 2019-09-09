@@ -3,8 +3,8 @@ package user
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/asuforce/gin-gorm-tutorial/db"
-	"github.com/asuforce/gin-gorm-tutorial/entity"
+	"gin-gorm-tutorial/db"
+	"gin-gorm-tutorial/entity"
 )
 
 // Service procides user's behavior

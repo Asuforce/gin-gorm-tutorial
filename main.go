@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/asuforce/gin-gorm-tutorial/db"
-	"github.com/asuforce/gin-gorm-tutorial/server"
+	"gin-gorm-tutorial/db"
+	"gin-gorm-tutorial/server"
 )
 
 func main() {
